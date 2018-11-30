@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url("img/BOSTON.jpg")
+        }
+
+        label {
+            display: block;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        #WORK {
+            left: 50%;
+            top: 75%;
+            margin-left: 15%;
+            position: absolute;
+            margin-top: 05%;
+        }
+
+        input,
+        label {
+            margin: .4rem 0;
+        }
+
+        .note {
+            font-size: .8em;
+        }
+
+        form {
+            background-color: indianred;
+            border-style: ridge;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        Header {
+            font-size: 50px;
+            text-decoration-color: crimson
+        }
+    </style>
+</head>
+
+<body>
+
+    <header text align="center">
+        <font color="red">Must be 21 or Older to Enter</font>
+    </header>
+    <div css="text-align:center" id="WORK">
+        <form>
+            <div>
+                <label for="BDay">Birth Date:</label>
+
+                <input type="date" id="BDay" name="BDay" value="2018-07-22" min="1970-01-01" max="2018-12-31" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+            </div>
+            <div>
+                <buttom id="enter">Enter</buttom>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        function getAge(dateString) {
+            today = new Date();
+            birthDate = new Date(dateString);
+            age = today.getFullYear() - birthDate.getFullYear();
+            m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            };
+        }
+
+        document.getElementById("enter").onclick = function() {
+            bd = document.getElementById('BDay').value;
+            getAge(bd);
+
+            if (age >= 21) {
+                document.write("access granted");
+                window.location.href = "home.html";
+            } else {
+                document.write("access not allowed");
+                
+
+            };
+
+
+        };
+    </script>
+</body>
+
+</html>

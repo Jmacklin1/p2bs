@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anchovies</title>
+    <!--Required metatag and stylesheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Custom styles here-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        #container {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        #display {
+            max-width: 100%;
+        }
+
+        #thumbs {
+            list-style: none;
+            padding: 0px;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        #thumbs img {
+            max-width: 50px;
+            border: 1px solid #f00;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background-image: url("img/hero.jpg");
+            height: 75%;
+            max-width: 100%;
+            min-width: 767;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: white;
+            position: relative;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 20px;
+            background-size: auto .hero-image {
+                background-image: url("")
+            }
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        #tags {
+
+            border-radius: 50%
+        }
+
+        .hero-text button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hero-text button {
+            background-color: #555;
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            padding: 10px;
+            height: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #column {
+            margin-top: 0px;
+        }
+
+        /*.row: {
+            content: "";
+            display: table;
+            clear: both;
+        }
+*/
+        #Brag {
+            font: 35px;
+            text-align: center;
+            padding-top: 40px
+        }
+
+        #food {
+            left: 50%;
+            top: 44;
+            margin-left: -45.5%;
+            position: absolute;
+            margin-top: 4%;
+        }
+
+        #specials {
+            left: 50%;
+            top: 50;
+            margin-left: position: absolute;
+            margin-top: 14%;
+        }
+
+        #list {
+            background: url("img/chalk%20board.png");
+            background-size: 99.5%;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: left
+        }
+
+        li {
+            text-emphasis-position: left;
+        }
+
+        #column {
+            padding-bottom: 800px
+        }
+
+        #padding {
+            padding: 225px
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center"><img src="img/eatdbm.png"></h2>
+    <div class="container">
+            <div class="row">
+<!--        <div class="column" style="background-color:white;">-->
+        <div class="col-md-4" style="background-color:white;">
+            <div><img src="img/menu1.jpg" id="tags" class="img-responsive">
+                <h2 id="food">Food</h2>
+            </div>
+
+
+        </div>
+        <div class="col-md-4" style="background-color:white;">
+            <p><img src="img/" id="tags" class="img-responsive"> </p>
+            <h2 align="left">Drinks</h2>
+
+        </div>
+        <div class="col-md-4" style="background-color:white" media="(min-width: 601px)">
+            <p> <img src="img/specials.jpg" id="tags" class="img-responsive"></p>
+            <h2 id="specials">Specials</h2>
+        </div>
+    </div>
+
+    </div>
+    <div id="padding"></div>
+
+    <div>
+        <h2 id="Brag">Braggin Rights</h2>
+
+        <ul id="list" style="min-width:758;height: auto">
+            <li><img id="TA" src="img/trip_logo_footer.png" style="max-width: auto" style="max-height:auto">#542 of 2,645 Restaurants in Boston</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <li>
+        </ul>
+
+    </div>
+
+    <div id="container">
+        <img id="display" src="img/pizza.jpg">
+        <ul id="thumbs">
+            <li><img src="img/calzone.jpg"></li>
+            <li><img src="img/black%20and%20white.jpg"></li>
+            <li><img src="img/HOLIDAYS.jpg"></li>
+            <li><img src="img/TB.jpg"></li>
+            <li><img src="img/random.jpg"></li>
+        </ul>
+    </div>
+
+    <!--Required scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Custom script here-->
+    <script>
+        thumbs = (document.querySelectorAll("#thumbs img"));
+        for (i = 0; i < thumbs.length; ++i) {
+
+            thumbs[i].onclick = function() {
+
+                imgsrc = this.src;
+
+                imgsrc = imgsrc.replace('thumb', 'full');
+
+                document.getElementById('display').src = imgsrc;
+            };
+        };
+    </script>
+</body>
+
+</html>
